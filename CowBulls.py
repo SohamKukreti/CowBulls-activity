@@ -235,7 +235,6 @@ class CowBulls:
 
             if g.redraw:
                 self.display()
-                g.screen.blit(g.pointer, g.pos)
                 pygame.display.flip()
                 g.redraw = False
 

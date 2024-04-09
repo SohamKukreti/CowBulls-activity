@@ -8,7 +8,7 @@ images = {}
 
 def init():
     global redraw, screen, images
-    global scale, w, h, pointer, pos
+    global scale, w, h, pos
     global INPUT_SIZE, DISP_SIZE, DIALPAD
     global ATTEMPT, XGAP, DKP
 
@@ -26,8 +26,6 @@ def init():
     Y_INIT = (h - 900 * scale) / 2
 
     pos = pygame.mouse.get_pos()
-    pointer = images['data/pointer.png']
-    pygame.mouse.set_visible(False)
     MARGIN = 10 * scale
     INPUT_SIZE = 75 * scale
     DISP_SIZE = 55 * scale
